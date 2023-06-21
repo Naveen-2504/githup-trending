@@ -6,7 +6,7 @@ export const AppBar = () => {
     <nav className="bg-gray-800">
       <div className="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
               className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -45,7 +45,7 @@ export const AppBar = () => {
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <i className="fa fa-github text-white text-4xl"></i>
@@ -67,31 +67,31 @@ export const AppBar = () => {
                   </label>
                 </div>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Pull requests
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Issues
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Codespaces
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Marketplace
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Explore
@@ -131,35 +131,35 @@ export const AppBar = () => {
         </div>
       </div>
 
-      <div className="sm:hidden" id="mobile-menu">
+      {/* <div className="sm:hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <a
-            href="#"
+            href="/"
             className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
             aria-current="page"
           >
             Dashboard
           </a>
           <a
-            href="#"
+            href="/"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Team
           </a>
           <a
-            href="#"
+            href="/"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Projects
           </a>
           <a
-            href="#"
+            href="/"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Calendar
           </a>
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 };

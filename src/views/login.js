@@ -35,10 +35,18 @@ export const LoginPage = () => {
       </div>
       <div className="flex justify-center w-full mt-20">
         <div className="w-80 text-center flex justify-between items-center">
-          <a className="text-sm text-fuchsia-600 hover:underline">Terms</a>{" "}
-          <a className="text-sm text-fuchsia-600 hover:underline">Privacy</a>{" "}
-          <a className="text-sm text-fuchsia-600 hover:underline">Security</a>{" "}
-          <a className="text-sm text-gray-400 hover:underline">Contact GitHub</a>
+          <a href="/" className="text-sm text-fuchsia-600 hover:underline">
+            Terms
+          </a>{" "}
+          <a href="/" className="text-sm text-fuchsia-600 hover:underline">
+            Privacy
+          </a>{" "}
+          <a href="/" className="text-sm text-fuchsia-600 hover:underline">
+            Security
+          </a>{" "}
+          <a href="/" className="text-sm text-gray-400 hover:underline">
+            Contact GitHub
+          </a>
         </div>
       </div>
     </div>

@@ -9,38 +9,38 @@ export const Header = () => {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <a
-                  href="#"
-                  className="text-slate-400	 hover:bg-white hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="/"
+                  className="text-slate-400 px-3 py-2 text-sm font-medium"
                 >
                   Explore
                 </a>
                 <a
-                  href="#"
-                  className="text-slate-400	 hover:bg-white hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="/"
+                  className="text-slate-400 px-3 py-2 text-sm font-medium"
                 >
                   Topics
                 </a>
                 <a
-                  href="#"
-                  className="text-slate-400	 hover:bg-white hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="/"
+                  className="text-indigo-500 px-3 py-2 text-sm font-medium border-b-4 border-indigo-500"
                 >
                   Trending
                 </a>
                 <a
-                  href="#"
-                  className="text-slate-400	 hover:bg-white hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="/"
+                  className="text-slate-400 px-3 py-2 text-sm font-medium"
                 >
                   Collections
                 </a>
                 <a
-                  href="#"
-                  className="text-slate-400	 hover:bg-white hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="/"
+                  className="text-slate-400 px-3 py-2 text-sm font-medium"
                 >
                   Events
                 </a>
                 <a
-                  href="#"
-                  className="text-slate-400	 hover:bg-white hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="/"
+                  className="text-slate-400 px-3 py-2 text-sm font-medium"
                 >
                   GitHub Sponsors
                 </a>
@@ -51,7 +51,7 @@ export const Header = () => {
             <div className="relative ml-3">
               <div>
                 <a
-                  href="#"
+                  href="/"
                   class="bg-slate-100 border border-slate-300 rounded-md px-3 py-2 text-sm"
                   aria-current="page"
                 >

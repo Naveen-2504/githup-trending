@@ -68,31 +68,31 @@ export const AppBar = () => {
                 </div>
                 <a
                   href="/"
-                  className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
+                  className="text-gray-300 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Pull requests
                 </a>
                 <a
                   href="/"
-                  className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
+                  className="text-gray-300 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Issues
                 </a>
                 <a
                   href="/"
-                  className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
+                  className="text-gray-300 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Codespaces
                 </a>
                 <a
                   href="/"
-                  className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
+                  className="text-gray-300 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Marketplace
                 </a>
                 <a
                   href="/"
-                  className="text-gray-300 hover:bg-white hover:text-white rounded-md px-3 py-2 text-md font-medium"
+                  className="text-gray-300 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                 >
                   Explore
                 </a>

@@ -179,9 +179,9 @@ export const MainPage = () => {
                 return (
                   <div key={i} className="border border-slate-300">
                     <div className="p-4">
-                      <div className="flex justify-between">
+                      <div className="flex justify-between leading-6">
                         <div>
-                          <div className="flex items-center">
+                          <div className="flex items-center gap-2">
                             <svg
                               aria-hidden="true"
                               height="16"
@@ -201,7 +201,7 @@ export const MainPage = () => {
                               {arr.full_name}
                             </a>
                           </div>
-                          <p className="font-light w-9/12">{arr.description}</p>
+                          <p className="font-light w-9/12 mt-2">{arr.description}</p>
                         </div>
                         <div>
                           <div class="bg-slate-100 flex space-x-2 border border-slate-300 rounded-md">
@@ -220,7 +220,7 @@ export const MainPage = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="flex justify-between">
+                      <div className="flex justify-between mt-2">
                         <div className="flex gap-5">
                           <div className="flex items-center gap-2">
                             <span className="w-3 h-3 bg-stone-400 inline-block rounded-full" />{" "}

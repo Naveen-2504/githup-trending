@@ -22,21 +22,7 @@ export const MainPage = () => {
                   <label
                     for="repositories"
                     class="block cursor-pointer select-none p-2 text-center peer-checked:bg-blue-500 peer-checked:font-bold peer-checked:text-white"
-                  >
-                    Repositories
-                  </label>
-                </div>
-                <div>
-                  <input
-                    type="radio"
-                    name="option"
-                    id="developers"
-                    class="peer hidden"
-                  />
-                  <label
-                    for="developers"
-                    class="block cursor-pointer select-none p-2 text-center peer-checked:bg-blue-500 peer-checked:font-bold peer-checked:text-white"
-                  >
+                  > 
                     Developers
                   </label>
                 </div>

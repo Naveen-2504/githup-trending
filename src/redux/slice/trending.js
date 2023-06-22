@@ -3,7 +3,9 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchTrending = createAsyncThunk(
   "fetchTrending",
   async (value) => {
-    const res = await fetch("https://api.github.com/search/repositories?q=stars:%3E1&sort=stars&order=desc");
+    const res = await fetch(
+      "https://api.github.com/search/repositories?q=stars:%3E1&sort=stars&order=desc"
+    );
     const resolvedData = await Promise.resolve(res.json());
     return { res: resolvedData, value };
   }
@@ -21,10 +23,16 @@ const trendingSlice = createSlice({
     builder.addCase(fetchTrending.pending, (state, action) => {
       state.isLoading = true;
     });
+
     builder.addCase(fetchTrending.fulfilled, (state, action) => {
       state.isLoading = false;
       state.radioName = action?.payload?.value || "repositories";
       state.data = action.payload.res;
+    });
+    
+    builder.addCase(fetchTrending.rejected, (state, action) => {
+      console.log("err", action.payload);
+      state.isError = true;
     });
   },
 });

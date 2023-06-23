@@ -16,7 +16,9 @@ export const LoginPage = () => {
   const handlelogin = () => {
     window.location.assign(
       "https://github.com/login/oauth/authorize?client_id=" + client_Id
-    );
+      );
+      dispatch(login());
+      navigate("/repos")
   };
 
   const handleClose = () => {

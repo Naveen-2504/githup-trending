@@ -117,8 +117,8 @@ export const MainPage = () => {
                 return (
                   <div className="border border-slate-300">
                     <div className="p-4 flex w-full justify-between">
-                      <div className="flex gap-3">
-                        <p>{i+1}</p>
+                      <div className="flex gap-3 w-40">
+                        <p>{i + 1}</p>
                         <div className="flex gap-3">
                           <img
                             src={arr.owner.avatar_url}
@@ -130,7 +130,7 @@ export const MainPage = () => {
                           </div>
                         </div>
                       </div>
-                      {/* <div>
+                      <div className="w-48">
                         <div className="flex gap-3">
                           <svg
                             aria-hidden="true"
@@ -143,7 +143,7 @@ export const MainPage = () => {
                           >
                             <path d="M9.533.753V.752c.217 2.385 1.463 3.626 2.653 4.81C13.37 6.74 14.498 7.863 14.498 10c0 3.5-3 6-6.5 6S1.5 13.512 1.5 10c0-1.298.536-2.56 1.425-3.286.376-.308.862 0 1.035.454C4.46 8.487 5.581 8.419 6 8c.282-.282.341-.811-.003-1.5C4.34 3.187 7.035.75 8.77.146c.39-.137.726.194.763.607ZM7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.79 2.79 0 0 1-1.436-.874A3.198 3.198 0 0 0 3 10c0 2.53 2.164 4.5 4.998 4.5Z"></path>
                           </svg>
-                          <p>name</p>
+                          <p className="text-slate-500 font-light">POPULAR REPO</p>
                         </div>
                         <div className="flex gap-3">
                           <svg
@@ -157,10 +157,14 @@ export const MainPage = () => {
                           >
                             <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
                           </svg>
-                          <p>username</p>
+                          <p className="font-bold text-blue-500">{arr.owner.login}</p>
                         </div>
-                        <p>remark</p>
-                      </div> */}
+                        {arr.description.length <= 50 ? (
+                          <p className="text-slate-500 font-light">{arr.description}</p>
+                        ) : (
+                          <p className="text-slate-500 font-light">{arr.description.slice(0, 50)}...</p>
+                        )}
+                      </div>
                       <div>
                         <button className="bg-slate-100 border border-slate-300 px-4 py-1 px-5 rounded-md">
                           Follow
@@ -194,14 +198,18 @@ export const MainPage = () => {
                             </svg>
                             <p
                               // href={`/repos/${arr.name}`}
-                              onClick={() => navigate(`/repos/${arr.full_name}`)}
+                              onClick={() =>
+                                navigate(`/repos/${arr.full_name}`)
+                              }
                               className="hover:underline text-purple-600"
                               // alt=""
                             >
                               {arr.full_name}
                             </p>
                           </div>
-                          <p className="font-light w-9/12 mt-2">{arr.description}</p>
+                          <p className="font-light w-9/12 mt-2">
+                            {arr.description}
+                          </p>
                         </div>
                         <div>
                           <div class="bg-slate-100 flex space-x-2 border border-slate-300 rounded-md">

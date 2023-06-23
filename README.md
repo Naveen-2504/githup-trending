@@ -19,6 +19,14 @@ Screenshots:
 
 <img src="src/assets/images/login.png" alt="Login" title="Login Page">
 
+
+## OAthu Page:
+
+
+Screenshots:
+
+<img src="src/assets/images/oathu.png" alt="Login" title="Login Page">
+
 ## Main Page:
 
 path is "/repos".
@@ -26,6 +34,12 @@ path is "/repos".
 trending tab Screenshots:
 
 <img src="src/assets/images/trending.png" alt="trending" title="trending">
+
+path is "/repos/details".
+
+trending tab Screenshots:
+
+<img src="src/assets/images/details.png" alt="trending" title="trending">
 
 developers tab Screenshots:
 

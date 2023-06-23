@@ -313,7 +313,7 @@ export const TrendingDetails = () => {
                           class="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="dropdownDefaultButton"
                         >
-                          {banState.data.map((arr, i) => {
+                          {banState.data.map((arr) => {
                             if (arr.name !== data.default_branch)
                               return (
                                 <li>
@@ -452,20 +452,9 @@ export const TrendingDetails = () => {
                         return (
                           <>
                             <div className="flex justify-between">
-                              <div className="flex gap-2 p-2">
+                              <div className="flex gap-2 p-2 w-64 text-center items-center">
                                 {arr.type === "tree" ? (
-                                  <svg
-                                    aria-label="Directory"
-                                    aria-hidden="true"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    version="1.1"
-                                    width="16"
-                                    data-view-component="true"
-                                    class="octicon octicon-file-directory-fill hx_color-icon-directory"
-                                  >
-                                    <path d="M1.75 1A1.75 1.75 0 0 0 0 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0 0 16 13.25v-8.5A1.75 1.75 0 0 0 14.25 3H7.5a.25.25 0 0 1-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75Z"></path>
-                                  </svg>
+                                  <i class="fa fa-folder text-blue-500" />
                                 ) : (
                                   <svg
                                     aria-label="File"
@@ -482,6 +471,12 @@ export const TrendingDetails = () => {
                                 )}{" "}
                                 <p>{arr.path}</p>
                               </div>
+                              <p className="w-40 text-center text-slate-500 font-light">
+                                Initial commit
+                              </p>
+                              <p className="w-40 text-center text-slate-500 font-light">
+                                2 days ago
+                              </p>
                             </div>
                             <div className="border border-slate-200" />
                           </>
@@ -495,9 +490,13 @@ export const TrendingDetails = () => {
             <div className="mt-8  w-[40rem]">
               <div>
                 <h1 className="font-bold mb-6">About</h1>
-                <p className="mb-4">{data.description}</p>
+                <p className="mb-4 text-slate-500">
+                  {data?.description
+                    ? data.description
+                    : "No description, website, or topics provided."}
+                </p>
                 <div>
-                  <div className="flex gap-1 items-center mb-4">
+                  <div className="flex gap-1 items-center mb-4 text-slate-500">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -511,7 +510,7 @@ export const TrendingDetails = () => {
                     </svg>
                     <p>Readme</p>
                   </div>
-                  <div className="flex gap-1 items-center mb-4">
+                  <div className="flex gap-1 items-center mb-4 text-slate-500">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -525,7 +524,7 @@ export const TrendingDetails = () => {
                     </svg>
                     <p> MIT license</p>
                   </div>
-                  <div className="flex gap-1 items-center mb-4">
+                  <div className="flex gap-1 items-center mb-4 text-slate-500">
                     <svg
                       text="gray"
                       aria-hidden="true"
@@ -540,7 +539,7 @@ export const TrendingDetails = () => {
                     </svg>
                     <p> Activity</p>
                   </div>
-                  <div className="flex gap-1 items-center mb-4">
+                  <div className="flex gap-1 items-center mb-4 text-slate-500">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -554,7 +553,7 @@ export const TrendingDetails = () => {
                     </svg>
                     <p>{data.stargazers_count} stars</p>
                   </div>
-                  <div className="flex gap-1 items-center mb-4">
+                  <div className="flex gap-1 items-center mb-4 text-slate-500">
                     <svg
                       aria-hidden="true"
                       height="16"
@@ -568,7 +567,7 @@ export const TrendingDetails = () => {
                     </svg>
                     <p>{data.watchers_count} watching</p>
                   </div>
-                  <div className="flex gap-1 items-center mb-4">
+                  <div className="flex gap-1 items-center mb-4 text-slate-500">
                     <svg
                       aria-hidden="true"
                       height="16"
